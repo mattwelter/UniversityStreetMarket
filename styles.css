@@ -417,19 +417,20 @@ header p {
 	display: none;
 	margin-left: 40px;
 	margin-top: 200px;
+	line-height: 17.5px;
 
 }
 
 #mobile h4 {
 	color: #2BD9C3;
-	font-size: 12px;
+	font-size: 8px;
 	padding-top: 15px;
 	margin-bottom: -12px;
 	text-transform: uppercase;
 }
 
 #mobile p {
-	font-size: 17.5px;
+	font-size: 11.5px;
 }
 
 
@@ -462,11 +463,6 @@ header p {
   		margin-left: -10px;
   		height: 70px;
   	}
-
-  	p {
-  	 	font-size: 17.5px !important;
-  	 	line-height: 24px;
-  	}
 }
 
 
@@ -489,11 +485,6 @@ header p {
   		margin-top: 24px;
   		margin-left: -10px;
   		height: 70px;
-  	}
-
-  	p {
-  	 	font-size: 17.5px !important;
-  	 	line-height: 24px;
   	}
 }
 
@@ -517,11 +508,6 @@ header p {
   		margin-top: 24px;
   		margin-left: -10px;
   		height: 70px;
-  	}
-
-  	p {
-  	 	font-size: 17.5px !important;
-  	 	line-height: 24px;
   	}
 }
 
