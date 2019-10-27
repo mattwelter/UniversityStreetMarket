@@ -413,7 +413,24 @@ header p {
 }
 
 
+#mobile {
+	display: none;
+	margin-left: 40px;
+	margin-top: 200px;
 
+}
+
+#mobile h4 {
+	color: #2BD9C3;
+	font-size: 12px;
+	padding-top: 15px;
+	margin-bottom: -12px;
+	text-transform: uppercase;
+}
+
+#mobile p {
+	font-size: 17.5px;
+}
 
 
 
@@ -426,9 +443,15 @@ header p {
 
 
 @media only screen and (min-width: 375px) and (max-width: 600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  	* {
-		font-family: 'CircularStd-Book', 'Arial', sans-serif !important;
-	}
+  	#mobile {
+  		display: block;
+  		font-family: 'CircularStd-Book', 'Arial', sans-serif !important;
+  		font-size: 17.5px !important;
+  	}
+
+  	.main, footer, .hero {
+  		display: none !important;
+  	}
 
   	nav a {
   		display: none;
@@ -444,46 +467,19 @@ header p {
   	 	font-size: 17.5px !important;
   	 	line-height: 24px;
   	}
-
-  	h4, h3, h2 {
-  		font-size: 17.5px !important;
-  	}
-
-  	#nextevent {
-  	 	margin-top: -10px;
-  	 	margin-left: -130px;
-  	}
-
-  	#vendors {
-  	 	max-width: 200px;
-  	 	text-align: left;
-  	 	margin-top: 0px;
-  	 	margin-left: -130px;
-  	}
-
-	#usmintro {
-		text-align: left;
-		margin-top: 225px;
-		margin-left: -130px;
-	}
-
-	.mapouter {
-		display: none;
-	}
-
-  	body {
-  	 	position: fixed;
-  	}
-  	#spanmap {
-	display: block;
-	}
 }
 
 
 @media only screen and (min-width: 375px) and (max-width: 600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  	* {
-		font-family: 'CircularStd-Book', 'Arial', sans-serif !important;
-	}
+  	#mobile {
+  		display: block;
+  		font-family: 'CircularStd-Book', 'Arial', sans-serif !important;
+  		font-size: 17.5px !important;
+  	}
+
+  	.main, footer, .hero {
+  		display: none !important;
+  	}
 
   	nav a {
   		display: none;
@@ -495,91 +491,37 @@ header p {
   		height: 70px;
   	}
 
-	p {
+  	p {
   	 	font-size: 17.5px !important;
   	 	line-height: 24px;
-  	}
-
-   	h4, h3, h2 {
-  		font-size: 17.5px !important;
-  	}
-
-  	#nextevent {
-  	 	margin-top:-10px;
-  	 	margin-left: -130px;
-  	}
-
-  	#vendors {
-  	 	max-width: 200px;
-  	 	text-align: left;
-  	 	margin-top: 0px;
-  	 	margin-left: -130px;
-  	}
-
-	#usmintro {
-		text-align: left;
-		margin-top: 225px;
-		margin-left: -130px;
-	}
-
-	.mapouter {
-		display: none;
-	}
-
-  	body {
-  	 	position: fixed;
   	}
 }
 
 
 @media only screen and (min-width:315px) and (max-width: 374px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-	* {
-		font-family: 'CircularStd-Book', 'Arial', sans-serif, !important;
-	}
+	#mobile {
+  		display: block;
+  		font-family: 'CircularStd-Book', 'Arial', sans-serif !important;
+  		font-size: 17.5px !important;
+  	}
 
-	nav a {
+  	.main, footer, .hero {
+  		display: none !important;
+  	}
+
+  	nav a {
   		display: none;
   	}
 
   	nav img {
-  		margin-top: 10px;
-  		margin-left: -20px;
-  		height: 60px;
+  		margin-top: 24px;
+  		margin-left: -10px;
+  		height: 70px;
   	}
 
   	p {
   	 	font-size: 17.5px !important;
   	 	line-height: 24px;
-  	}
-
-  	h4, h3, h2 {
-  		font-size: 17.5px !important;
-  	}
-
-  	#nextevent {
-  	 	margin-top: 65px;
-  	 	margin-left: -140px;
-  	}
-
-  	#vendors {
-  	 	max-width: 200px;
-  	 	text-align: left;
-  	 	margin-top: 0px;
-  	 	margin-left: -140px;
-  	}
-
-	#usmintro {
-		text-align: left;
-		margin-top: 225px;
-		margin-left: -140px;
-	}
-
-	.mapouter {
-		display: none;
-	}
-
-  	body {
-  	 	position: fixed;
   	}
 }
 
