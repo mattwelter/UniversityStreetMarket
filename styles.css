@@ -384,7 +384,7 @@ header p {
 }
 
 .main {
-	font-family: 'CircularStd-Book';
+	font-family: 'CircularStd-Book' !important;
 	src: url('https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.ttf');
 	font-size: 17.5px;
 	line-height: 30px;
