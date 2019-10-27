@@ -566,5 +566,17 @@ header p {
 
 @font-face {
 	font-family: 'CircularStd-Book';
-	src: url("https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.ttf") format("ttf");
+	src: url('https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.otf') format('');
+	src: url('https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.svg#CircularStd-Book') format('svg');
+	src: url('https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.ttf') format('truetype');
+	src: url('https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.eot') format('eot');
+	src: url('https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.woff') format('woff');
+	src: url('https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.woff2') format('woff2');
 }
+
+
+
+
+
+
+
