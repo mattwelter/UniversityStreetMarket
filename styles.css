@@ -207,7 +207,7 @@ NAIGATION START
 */
 
 nav, a {
-	font-family: 'Circular Std';
+	font-family: 'CircularStd-Book';
 	font-size: 17.5px;
 	line-height: 28px;
 	letter-spacing: .2px;
@@ -305,7 +305,7 @@ FOOTER
 }
 
 .footertext {
-	font-family: 'Circular Std';
+	font-family: 'CircularStd-Book';
 	display: inline-block;
 	list-style-type: none;
 	position: absolute;
@@ -366,7 +366,7 @@ BODY CONTENT
 */
 
 h2 {
-	font-family: 'Circular Std';
+	font-family: 'CircularStd-Book';
 	font-weight: 600;
 	font-size: 28px;
 	margin-top: -20px;
