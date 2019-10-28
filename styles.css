@@ -418,14 +418,13 @@ header p {
 	margin-left: 40px;
 	margin-top: 200px;
 	line-height: 17.5px;
-
 }
 
 #mobile h4 {
 	color: #2BD9C3;
-	font-size: 8px !important;
+	font-size: 7px !important;
 	padding-top: 15px;
-	margin-bottom: -12px;
+	margin-bottom: -15px;
 	text-transform: uppercase;
 }
 
@@ -433,6 +432,19 @@ header p {
 	font-size: 11.5px !important;
 }
 
+#mobile .depop {
+	line-height: 24px;
+}
+
+
+
+#mobilephoto {
+	width: 100vw;
+	display: none;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+}
 
 
 
@@ -444,70 +456,34 @@ header p {
 
 
 @media only screen and (min-width: 375px) and (max-width: 600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  	#mobile {
+  	#mobilephoto {
   		display: block;
-  		font-family: 'CircularStd-Book', 'Arial', sans-serif !important;
-  		font-size: 17.5px !important;
   	}
 
-  	.main, footer, .hero {
+  	.main, footer, .hero, header {
   		display: none !important;
-  	}
-
-  	nav a {
-  		display: none;
-  	}
-
-  	nav img {
-  		margin-top: 24px;
-  		margin-left: -10px;
-  		height: 70px;
   	}
 }
 
 
 @media only screen and (min-width: 375px) and (max-width: 600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  	#mobile {
+  	#mobilephoto {
   		display: block;
-  		font-family: 'CircularStd-Book', 'Arial', sans-serif !important;
-  		font-size: 17.5px !important;
   	}
 
-  	.main, footer, .hero {
+  	.main, footer, .hero, header {
   		display: none !important;
-  	}
-
-  	nav a {
-  		display: none;
-  	}
-
-  	nav img {
-  		margin-top: 24px;
-  		margin-left: -10px;
-  		height: 70px;
   	}
 }
 
 
 @media only screen and (min-width:315px) and (max-width: 374px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-	#mobile {
+  	#mobilephoto {
   		display: block;
-  		font-family: 'CircularStd-Book', 'Arial', sans-serif !important;
-  		font-size: 17.5px !important;
   	}
 
-  	.main, footer, .hero {
+  	.main, footer, .hero, header {
   		display: none !important;
-  	}
-
-  	nav a {
-  		display: none;
-  	}
-
-  	nav img {
-  		margin-top: 24px;
-  		margin-left: -10px;
-  		height: 70px;
   	}
 }
 
