@@ -436,18 +436,14 @@ header p {
 	line-height: 24px;
 }
 
-
-
 #mobilephoto {
 	width: 100vw;
 	display: none;
 	position: fixed;
 	top: 0px;
+	right: 0px;
+	left: 0px;
 	bottom: 0px;
-}
-
-* {
-	position: fixed;
 }
 
 
@@ -460,6 +456,10 @@ header p {
 
 
 @media only screen and (min-width: 375px) and (max-width: 600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  	* {
+		position: fixed;
+	}
+
   	#mobilephoto {
   		display: block;
   	}
@@ -471,6 +471,10 @@ header p {
 
 
 @media only screen and (min-width: 375px) and (max-width: 600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  	* {
+		position: fixed;
+	}
+
   	#mobilephoto {
   		display: block;
   	}
@@ -482,6 +486,10 @@ header p {
 
 
 @media only screen and (min-width:315px) and (max-width: 374px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+   	* {
+		position: fixed;
+	}
+
   	#mobilephoto {
   		display: block;
   	}
