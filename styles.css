@@ -446,6 +446,10 @@ header p {
 	bottom: 0px;
 }
 
+* {
+	position: fixed;
+}
+
 
 
 
