@@ -456,8 +456,12 @@ header p {
 
 
 @media only screen and (min-width: 375px) and (max-width: 600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  	* {
-		position: fixed;
+  	html, body {
+		overflow-x: hidden;
+	}
+	
+	body {
+		position: relative;
 	}
 
   	#mobilephoto {
@@ -471,8 +475,12 @@ header p {
 
 
 @media only screen and (min-width: 375px) and (max-width: 600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  	* {
-		position: fixed;
+  	html, body {
+		overflow-x: hidden;
+	}
+	
+	body {
+		position: relative;
 	}
 
   	#mobilephoto {
@@ -486,8 +494,12 @@ header p {
 
 
 @media only screen and (min-width:315px) and (max-width: 374px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-   	* {
-		position: fixed;
+  	html, body {
+		overflow-x: hidden;
+	}
+	
+	body {
+		position: relative;
 	}
 
   	#mobilephoto {
