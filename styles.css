@@ -42,8 +42,8 @@ BODY CONTENT
 	margin: auto;
 	height: 100px;
 	width: 340px;
-	font-family: "Circular Std", 'Circular Std' !important;
-	font-weight: 400;
+	font-family: "Circular Std Book", 'Circular Std' !important;
+	font-weight: normal;
 }
 
 #mobile img {
@@ -83,6 +83,16 @@ BODY CONTENT
 	body {
 		position: relative;
 	}
+}
+
+ @font-face {
+    font-family: 'Circular Std Book';
+   	src: url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.eot');
+    src: url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+      	url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.woff') format('woff'),
+   		url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.ttf') format('truetype');
+   	font-weight: normal;
+    font-style: normal;
 }
 
 
