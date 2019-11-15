@@ -425,7 +425,7 @@ header p {
 	height: 100px;
 	width: 340px;
 	line-height: 17.5px;
-	font-family: 'Circular Std Bold', 'Circular Std' !important;
+	font-family: "Circular Std Bold", 'Circular Std' !important;
 	font-weight: bold;
 }
 
@@ -439,7 +439,7 @@ header p {
 	margin-top: -104px;
 	line-height: 33px !important;
 	font-size: 24px !important;
-	font-family: 'Circular Std Bold', 'Circular Std' !important;
+	font-family: "Circular Std Bold", 'Circular Std' !important;
 	font-weight: bold;
 }
 
@@ -495,6 +495,15 @@ header p {
 		 url('https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.ttf') format('truetype'),
 		 url('https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.woff') format('woff'),
 		 url('https://cdn.rawgit.com/ixahmedxi/circular-std/blob/master/fonts/CircularStd-Book.woff2') format('woff2');
+}
+
+@font-face {font-family: "Circular Std Bold";
+    src: url("http://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.svg#Circular Std Bold") format("svg"); /* iOS 4.1- */
 }
 
 
