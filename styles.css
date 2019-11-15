@@ -414,13 +414,16 @@ header p {
 
 
 #mobile {
-	display: none;
-	margin-left: 30px;
-	margin-top: 50px;
+	display: block;
+	z-index: 999;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	position: fixed;
+	margin: auto;
+	height: 100px;
+	width: 340px;
 	line-height: 17.5px;
 }
 
@@ -450,10 +453,6 @@ header p {
 	
 	body {
 		position: relative;
-	}
-
-	#mobile {
-		display: inline-block;
 	}
 
   	.main, footer, .hero, header {
