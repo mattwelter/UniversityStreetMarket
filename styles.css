@@ -10,17 +10,6 @@ body {
 	margin: -8px;
 }
 
-#wrapper {
-	width: 1180px;
-	margin: 0 auto;
-}
-
-.main {
-	padding-left: 164px;
-	padding-right: 130px;
-	width: 1180px !important;
-}
-
 
 
 
@@ -31,7 +20,7 @@ BODY CONTENT
 
 */
 
-#mobile {
+#main {
 	display: block;
 	z-index: 15;
 	top: 0;
@@ -42,15 +31,15 @@ BODY CONTENT
 	margin: auto;
 	height: 100px;
 	width: 340px;
-	font-family: "Circular Std Book", 'Circular Std' !important;
+	font-family: "Circular Std Book" !important;
 	font-weight: normal;
 }
 
-#mobile img {
+#main img {
 	height: 100px;
 }
 
-#mobile p {
+#main p {
 	display: block;
 	margin-left: 150px;
 	margin-top: -104px;
@@ -64,26 +53,6 @@ BODY CONTENT
 
 
 
-@media only screen and (min-width: 375px) and (max-width: 600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  	html, body {
-		overflow-x: hidden;
-	}
-	
-	body {
-		position: relative;
-	}
-}
-
-
-@media only screen and (min-width:315px) and (max-width: 374px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  	html, body {
-		overflow-x: hidden;
-	}
-	
-	body {
-		position: relative;
-	}
-}
 
  @font-face {
     font-family: 'Circular Std Book';
