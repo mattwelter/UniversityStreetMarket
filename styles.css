@@ -8,13 +8,21 @@ body {
 	color: white !important;
 	background-color: #222;
 	margin: -8px;
+	font-family: "Quicksand", sans-serif;
 }
 
-/*
 
-BODY CONTENT
 
-*/
+
+
+
+
+
+
+
+
+
+/* Main Content */
 
 #main {
 	display: block;
@@ -26,9 +34,9 @@ BODY CONTENT
 	position: fixed;
 	margin: auto;
 	height: 100px;
-	width: 340px;
-	font-family: "Circular Std" !important;
-	font-weight: normal;
+	width: 350px;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
 }
 
 #main img {
@@ -39,22 +47,45 @@ BODY CONTENT
 	display: block;
 	margin-left: 150px;
 	margin-top: -104px;
-	line-height: 33px !important;
-	font-size: 24px !important;
+	line-height: 33px;
+	font-size: 24px;
 }
 
-
- @font-face {
-    font-family: 'Circular Std Book';
-   	src: url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.eot');
-    src: url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
-      	url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.woff') format('woff'),
-   		url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.ttf') format('truetype');
-   	font-weight: normal;
-    font-style: normal;
+#content {
+	margin-top: 40px;
 }
 
+nav {
+	list-style-type: none;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 400;
+	font-size: 17.5px;
+	width: 390px;
+	margin-left: -30px;
+}
 
-@import url(https://db.onlinewebfonts.com/c/9475d6a0b79c164f9f605673714e75d9?family=Circular+Std+Medium);
+nav ul {
+	display: inline;
+}
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+.link {
+	border-bottom: 1px solid white;
+	padding: 3px 0px 4px 0px;
+}
+
+.link:hover {
+	border-radius: 2px;
+	background-color: white;
+	color: black;
+	border-bottom: 1px solid black;
+}
 
