@@ -10,10 +10,6 @@ body {
 	margin: -8px;
 }
 
-
-
-
-
 /*
 
 BODY CONTENT
@@ -31,7 +27,7 @@ BODY CONTENT
 	margin: auto;
 	height: 100px;
 	width: 340px;
-	font-family: 'Circular Std Book' !important;
+	font-family: "Circular Std Book" !important;
 	font-weight: normal;
 }
 
@@ -48,12 +44,6 @@ BODY CONTENT
 }
 
 
-
-
-
-
-
-
  @font-face {
     font-family: 'Circular Std Book';
    	src: url('http://6e461dbc489ad4c14a5e-c28b1386850db717caac12549deaa1b5.r57.cf3.rackcdn.com/newsletter-fonts/CircularStd-Book.eot');
@@ -67,4 +57,4 @@ BODY CONTENT
 
 @import url(https://db.onlinewebfonts.com/c/9475d6a0b79c164f9f605673714e75d9?family=Circular+Std+Medium);
 
-@font-face {font-family: "Circular Std Medium"; src: url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot"); src: url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff") format("woff"), url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.svg#Circular Std Medium") format("svg"); }
+
