@@ -124,11 +124,11 @@ a:visited {
 	}
 	#content {
 		margin-top: 66px;
-		margin-left: -10px;
+		margin-left: -12px;
 	}
 	nav {
 		font-size: 16px;
-		margin-left: -35px;
+		margin-left: -34px;
 	}
 	nav li {
 		margin-left: 23px;
@@ -142,7 +142,10 @@ a:visited {
 	}
 	section h2 {
 		margin-bottom: 76px;
-		margin-top: -90px;
-		margin-left: -12px;
+		margin-top: -100px;
+		margin-left: -14px;
+	}
+	body {
+		position: static;
 	}
 }
