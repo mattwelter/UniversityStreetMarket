@@ -114,15 +114,17 @@ a:visited {
 	}
 	#main img {
 		height: 80px;
+		margin-left: -10px;
 	}
 	#main p {
-		margin-left: 120px;
+		margin-left: 110px;
 		margin-top: -90px;
 		line-height: 30px;
 		font-size: 22px;
 	}
 	#content {
 		margin-top: 66px;
+		margin-left: -10px;
 	}
 	nav {
 		font-size: 16px;
@@ -139,7 +141,8 @@ a:visited {
 		margin-left: -2px;
 	}
 	section h2 {
-		margin-bottom: 80px;
+		margin-bottom: 76px;
 		margin-top: -90px;
+		margin-left: -12px;
 	}
 }
