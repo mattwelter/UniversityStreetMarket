@@ -12,21 +12,7 @@
 
 body {
 	margin: 0px;
-	background-color: white;
-}
-
-body::after {
-  	content: "";
-  	background: url(media/usmbackground.jpg);
-	background-size: 800px;
-	background-repeat: repeat;
- 	opacity: 0.1;
-  	top: 0;
-  	left: 0;
-  	bottom: 0;
-  	right: 0;
-  	position: absolute;
-  	z-index: -1;   
+	background-color: #fafafa;
 }
 
 /*
@@ -82,7 +68,7 @@ header {
 	grid-column: 1/8;
 	grid-row: 1;
 	background-color: #191919;
-	box-shadow: 0px 3px 6px darkgrey;
+	box-shadow: 0px 1px 6px darkgrey;
 	border-bottom: 1px solid grey;
 
 }
@@ -90,7 +76,7 @@ header {
 .fab {
 	color: white !important;
 	float: right;
-	margin: -41px 14px 0px 0px;
+	margin: -41px 20px 0px 0px;
 	font-size: 1.9em;
 }
 
@@ -112,10 +98,53 @@ header {
 
 #tag {
 	color: #333;
-	margin-top: -36px;
+	margin-top: -26px;
 	grid-row: 3;
 	grid-column: 1/7;
 	text-align: center;
+}
+
+#vendor-application {
+	grid-row: 4;
+	grid-column: 1/7;
+	color: white;
+	width: 220px;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#vendor-application p {
+	font-weight: 700;
+	background-color: #FF8080;
+	border-radius: 6px;
+	font-size: 19px !important;
+	padding: 16px 10px 16px 10px;
+}
+
+#vendor-application:hover {
+	box-shadow:;
+}
+
+.fa-paper-plane {
+	color: #FF8080;
+	font-size: 15px;
+	position: absolute;
+	margin-left: -50px;
+}
+
+#contact-us {
+	grid-row: 5;
+	grid-column: 1/7;
+	color: black;
+	text-align: center;
+}
+
+#contact-us p {
+	font-weight: 700;
+	margin: -7px 0px 0px 20px;
+	color: #FF8080;
+	font-size: 15px !important;
 }
 
 #campuses {
@@ -127,6 +156,7 @@ header {
 }
 
 #campuses h2 {
+	color: #333;
 	grid-row: 1;
 	grid-column: 1/8;
 	text-align: center;
@@ -134,23 +164,24 @@ header {
 }
 
 #campuses h3 {
+	color: #333;
 	margin-top: -10px;
 	font-size: 15px;
 }
 
 #campuses img {
-	height: 150px;
+	height: 100px;
 }
 
 #asu {
 	grid-row: 6;
-	grid-column: 3/5;
+	grid-column: 2/4;
 	text-align: center;
 }
 
 #uofa {
 	grid-row: 6;
-	grid-column: 4/6;
+	grid-column: 5/7;
 	text-align: center;
 }
 
@@ -261,14 +292,17 @@ MAIN BODY
 	}
 
 	#sentence {
+		color: #333;
 		grid-row: 3;
-		font-size: 5.6vw;
-		line-height: 7vw;
+		font-size: 36px;
+		line-height: 40px;
+		text-align: center;
 	}
 
 	#tag {
-		font-size: 3vw;
-		margin-top: -14px;
+		font-size: 12px;
+		margin-top: -28px;
+		text-align: center;
 		grid-row: 4;
 	}
 
@@ -295,39 +329,19 @@ MAIN BODY
 		padding-top: 3px;
 	}
 
-	#campuses {
-		padding-top: 150px;
-		grid-column: 1/8;
-		grid-row: 5;
-		display: grid;
-		padding-bottom: 200px;
-	}
-
-	#campuses h2 {
-		grid-row: 1;
-		grid-column: 1/8;
-		text-align: center;
-		font-size: 35px;
-	}
-
-	#campuses h3 {
-		margin-top: -10px;
-		font-size: 15px;
-	}
-
 	#campuses img {
-		height: 150px;
+		height: 100px;
 	}
 
 	#asu {
 		grid-row: 6;
-		grid-column: 3/5;
+		grid-column: 2/4;
 		text-align: center;
 	}
 
 	#uofa {
 		grid-row: 6;
-		grid-column: 4/6;
+		grid-column: 5/7;
 		text-align: center;
 	}
 }
