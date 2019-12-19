@@ -105,6 +105,7 @@ header {
 }
 
 #vendor-application {
+	text-decoration: none;
 	grid-row: 4;
 	grid-column: 1/7;
 	color: white;
@@ -120,10 +121,11 @@ header {
 	border-radius: 6px;
 	font-size: 19px !important;
 	padding: 16px 10px 16px 10px;
+	transition: 0.2s ease;
 }
 
-#vendor-application:hover {
-	box-shadow:;
+#vendor-application p:hover {
+	background-color: #FF6565;
 }
 
 .fa-paper-plane {
@@ -134,6 +136,7 @@ header {
 }
 
 #contact-us {
+	text-decoration: none;
 	grid-row: 5;
 	grid-column: 1/7;
 	color: black;
@@ -145,6 +148,11 @@ header {
 	margin: -7px 0px 0px 20px;
 	color: #FF8080;
 	font-size: 15px !important;
+	transition: 0.2s ease;
+}
+
+#contact-us p:hover {
+	color: #FF6565;
 }
 
 #campuses {
@@ -160,7 +168,7 @@ header {
 	grid-row: 1;
 	grid-column: 1/8;
 	text-align: center;
-	font-size: 35px;
+	font-size: 28px;
 }
 
 #campuses h3 {
@@ -294,14 +302,14 @@ MAIN BODY
 	#sentence {
 		color: #333;
 		grid-row: 3;
-		font-size: 36px;
-		line-height: 40px;
+		font-size: 28px;
+		line-height: 30px;
 		text-align: center;
 	}
 
 	#tag {
 		font-size: 12px;
-		margin-top: -28px;
+		margin-top: -20px;
 		text-align: center;
 		grid-row: 4;
 	}
@@ -334,6 +342,7 @@ MAIN BODY
 	}
 
 	#asu {
+
 		grid-row: 6;
 		grid-column: 2/4;
 		text-align: center;
