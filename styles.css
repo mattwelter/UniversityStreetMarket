@@ -99,6 +99,7 @@ header {
 
 footer {
 	margin-top: 18px;
+	margin-bottom: 45px;
 	padding-top: 15px;
 	grid-column: 1/7;
 	grid-row: 20;
