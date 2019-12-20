@@ -15,6 +15,28 @@ body {
 	background-color: #fafafa;
 }
 
+.main {
+	font-family: 'Nunito Sans';
+	font-size: 17.5px;
+	line-height: 32px;
+	letter-spacing: 0px;
+}
+
+.link {
+	color: #191919 !important;
+	font-weight: 700;
+}
+
+.link:hover {
+	border-bottom: 1px solid #191919;
+	padding-bottom: 0px;
+}
+
+::selection {
+    background: #6a11ea;
+    color: white;
+}
+
 /*
 body {
 	margin: 0px;
@@ -68,9 +90,38 @@ header {
 	grid-column: 1/8;
 	grid-row: 1;
 	background-color: #191919;
-	box-shadow: 0px 1px 6px darkgrey;
-	border-bottom: 1px solid grey;
+	box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgba(0,0,0,0.8);
+	position: fixed;
+	width: 100%;
+	opacity: 0.94;
+}
 
+footer {
+	margin-top: 18px;
+	padding-top: 15px;
+	grid-column: 1/7;
+	grid-row: 20;
+	text-align: center;
+}
+
+footer:before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	margin-left: -35px;
+	width: 270px;
+	border-top: 1px solid lightgray;
+}
+
+footer img {
+	margin-top: 25px;
+	height: 85px;
+}
+
+footer p {
+	margin-top: -12px;
+	font-size: 12px;
 }
 
 .fab {
@@ -78,6 +129,10 @@ header {
 	float: right;
 	margin: -41px 20px 0px 0px;
 	font-size: 1.9em;
+}
+
+.fa-paper-plane {
+	z-index: -1;
 }
 
 #logo {
@@ -126,6 +181,7 @@ header {
 
 #vendor-application p:hover {
 	background-color: #FF6565;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
 }
 
 .fa-paper-plane {
@@ -145,7 +201,7 @@ header {
 
 #contact-us p {
 	font-weight: 700;
-	margin: -7px 0px 0px 20px;
+	margin: -3px 0px 0px 20px;
 	color: #FF8080;
 	font-size: 15px !important;
 	transition: 0.2s ease;
@@ -156,48 +212,54 @@ header {
 }
 
 #campuses {
-	padding-top: 150px;
+	margin-top: 80px;
 	grid-column: 1/8;
 	grid-row: 5;
 	display: grid;
-	padding-bottom: 200px;
+	margin-bottom: 50px;
+	padding-top: 4px;
 }
 
 #campuses h2 {
-	color: #333;
+	margin-bottom: 6px;
+	color: black;
+	opacity: .4;
 	grid-row: 1;
 	grid-column: 1/8;
 	text-align: center;
-	font-size: 28px;
+	font-size: 12px;
+	font-weight: 700 !important;
+	letter-spacing: 0.4 !important;
+	text-transform: uppercase;
 }
 
 #campuses h3 {
 	color: #333;
 	margin-top: -10px;
 	font-size: 15px;
+	letter-spacing: 0px;
 }
 
 #campuses img {
 	height: 100px;
+	filter: grayscale(100%) contrast(200%);
+	opacity: 0.4;
 }
 
 #asu {
 	grid-row: 6;
-	grid-column: 2/4;
+	grid-column: 3;
 	text-align: center;
+	margin-left: 45px;
 }
 
 #uofa {
 	grid-row: 6;
-	grid-column: 5/7;
+	grid-column: 5;
 	text-align: center;
+	margin-right: 45px;
 }
-
-
-
-
-
-
+/*
 nav, a {
 	font-size: 18px;
 	line-height: 28px;
@@ -234,53 +296,18 @@ nav a:visited {
 	color: black;
 }
 
-/*
 nav a:hover {
 	padding-bottom: 2px;
 	border-bottom: 2px solid black;
 }
-*/
+
 nav li {
 	list-style-type: none;
 	padding-left: 0;
 	display: inline;
 }
-
-
-
-
-
-
-
-
-
-
-/*
-
-MAIN BODY
-
 */
 
-.main {
-	font-family: 'Nunito Sans';
-	font-size: 17.5px;
-	line-height: 32px;
-	letter-spacing: 0px;
-}
-
-.link {
-	color: #191919 !important;
-	font-weight: 700;
-}
-
-.link:hover {
-	border-bottom: 1px solid #191919;
-	padding-bottom: 0px;
-}
-
-::selection {
-    background: yellow;
-}
 
 
 
@@ -338,23 +365,34 @@ MAIN BODY
 	}
 
 	#campuses img {
-		height: 100px;
-	}
-
-	#asu {
-
-		grid-row: 6;
-		grid-column: 2/4;
-		text-align: center;
+		height: 60px;
 	}
 
 	#uofa {
-		grid-row: 6;
-		grid-column: 5/7;
-		text-align: center;
+		margin-top: 14px;
+	}
+
+	#uofa img {
+		height: 30px !important;
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 887px) {
+
+}
 
 
 
