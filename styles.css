@@ -196,8 +196,9 @@ footer p {
 	text-decoration: none;
 	grid-row: 5;
 	grid-column: 1/7;
-	color: black;
 	text-align: center;
+	margin: 0 auto;
+	height: 14px;
 }
 
 #contact-us p {
