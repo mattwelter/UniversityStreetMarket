@@ -12,7 +12,7 @@
 
 body {
 	margin: 0px;
-	background-color: #fafafa;
+	background-color: #fbf7f5;
 }
 
 .main {
@@ -89,16 +89,60 @@ p {
 header {
 	grid-column: 1/8;
 	grid-row: 1;
-	background-color: #191919;
-	box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
-	border-bottom: 1px solid rgba(0,0,0,0.8);
+	background-color: #fbf7f5;
+	/*box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgba(0,0,0,0.8);*/
 	position: fixed;
 	width: 100%;
 	opacity: 0.94;
+	z-index: 2;
+}
+
+header section {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#marquee {
+	color: black;
+	font-size: 14px !important;
+	width: 780px;
+	margin: -42px 0px 0px 165px;
+	padding-bottom: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#marquee span {
+	display: inline-block;
+	padding-left: 100%;
+	/* show the marquee just outside the paragraph */
+	animation: marquee 15s linear infinite;
+}
+
+#marquee span:hover {
+	animation-play-state: paused
+}
+
+@keyframes marquee {
+	0% {
+    	transform: translate(0, 0);
+	}
+	100% {
+    	transform: translate(-100%, 0);
+	}
+}
+
+#marquee .underline {
+	font-weight: 700;
+	border-bottom: 1px solid black;
+	padding-bottom: 0px;
+	font-size: 12px;
 }
 
 footer {
-	margin-top: 18px;
+	margin-top: 100px;
 	margin-bottom: 45px;
 	padding-top: 15px;
 	grid-column: 1/7;
@@ -126,7 +170,7 @@ footer p {
 }
 
 .fab {
-	color: white !important;
+	color: black !important;
 	float: right;
 	margin: -41px 20px 0px 0px;
 	font-size: 1.4em;
@@ -137,26 +181,130 @@ footer p {
 	margin: 0px 0px 0px 10px;
 	display: block;
 	padding-top: 3px;
+	filter: invert(100%);
 }
 
 #sentence {
 	color: #333;
-	margin-top: 200px;
+	margin-top: 170px;
 	grid-row: 2;
 	grid-column: 1/7;
 	text-align: center;
-	line-height: 64px;
+	line-height: 54px;
 	font-weight: 800;
 }
 
 #tag {
-	color: grey;
-	font-size: 24px;
-	margin-top: -35px;
-	margin-bottom: 50px;
+	color: #555;
+	font-size: 14px;
+	margin-top: -32px;
+	margin-bottom: 100px;
 	grid-row: 3;
 	grid-column: 1/7;
 	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#eventphotos {
+	grid-column: 1/8;
+	grid-row: 4;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+	max-width: 770px;
+	margin: 0 auto;
+}
+
+#eventphotos img, #eventphotos video {
+	width: 250px;
+	border-radius: 8px;
+}
+
+#eventphotos div {
+	height: 250px;
+}
+
+#eventphotos div video {
+	object-fit: cover;
+}
+
+#eventphotos .fa-instagram {
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px;
+	text-shadow: 2px 2px 6px gray;
+	z-index: 1;
+	color: white !important;
+}
+
+#eventphotos section:nth-child(1) {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#eventphotos section:nth-child(1):hover {
+	opacity: 0.4;
+}
+
+#eventphotos section:nth-child(2) {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+#eventphotos section:nth-child(2):hover {
+	opacity: 0.4;
+}
+
+#eventphotos section:nth-child(3) {
+	grid-column: 5;
+	grid-row: 1;
+}
+
+#eventphotos section:nth-child(3):hover {
+	opacity: 0.4;
+}
+
+#eventphotos section:nth-child(4) {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+#eventphotos section:nth-child(4):hover {
+	opacity: 0.4;
+}
+
+#eventphotos section:nth-child(5) {
+	grid-column: 3;
+	grid-row: 2;
+}
+
+#eventphotos section:nth-child(5):hover {
+	opacity: 0.4;
+}
+
+#eventphotos section:nth-child(6) {
+	grid-column: 5;
+	grid-row: 2;
+}
+
+#eventphotos section:nth-child(6):hover {
+	opacity: 0.4;
 }
 
 
@@ -173,7 +321,7 @@ footer p {
 
 #vendor-application {
 	text-decoration: none;
-	grid-row: 4;
+	grid-row: 6;
 	grid-column: 1/7;
 	color: white;
 	width: 220px;
@@ -189,6 +337,7 @@ footer p {
 	font-size: 19px !important;
 	padding: 16px 10px 16px 10px;
 	transition: 0.2s ease;
+	margin-top: 60px;
 }
 
 #vendor-application p:hover {
@@ -206,7 +355,7 @@ footer p {
 
 #contact-us {
 	text-decoration: none;
-	grid-row: 5;
+	grid-row: 7;
 	grid-column: 1/7;
 	text-align: center;
 	margin: 0 auto;
@@ -223,33 +372,6 @@ footer p {
 
 #contact-us p:hover {
 	color: #FF6565;
-}
-
-
-
-
-
-
-
-
-
-
-#eventphotos {
-	grid-column: 1/8;
-	grid-row: 6;
-}
-
-#eventphotos img, #eventphotos video {
-	width: 200px;
-	border-radius: 8px;
-}
-
-#eventphotos div {
-	height: 200px;
-}
-
-#eventphotos div video {
-	object-fit: cover;
 }
 
 
@@ -403,12 +525,12 @@ nav li {
 		line-height: 30px;
 		text-align: center;
 		margin-top: 125px;
-		font-weight: 700;
+		font-weight: 800;
 	}
 
 	#tag {
 		color: #333;
-		font-size: 12px;
+		font-size: 10px;
 		margin-top: -20px;
 		text-align: center;
 		grid-row: 4;
@@ -439,6 +561,34 @@ nav li {
 
 	.fab {
 		font-size: 1.9em;
+	}
+
+	header .fab {
+		background-color: #fbf7f5;
+	}
+
+	header section {
+		max-width: 1000px;
+	}
+
+	#marquee {
+		width: 55vw;
+		position: absolute;
+	}
+
+	#eventphotos {
+		grid-row-gap: 1vw !important;
+		grid-column-gap: 1.3vw !important;
+		margin-top: 8vw;
+	}
+
+	#eventphotos img {
+		height: 28vw;
+		width: 28vw;
+	}
+
+	#eventphotos .fab {
+		display: none;
 	}
 
 	#campuses img {
