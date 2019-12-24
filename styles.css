@@ -639,8 +639,16 @@ nav li {
 
 
 
-@media screen and (max-width: 887px) {
-
+@media screen and (max-width: 375px) {
+	#sentence {
+		margin-top: 165px;
+	}
+	#eventphotos {
+		margin-top: 80px;
+	}
+	#footer {
+		margin-top: 55px;
+	}
 }
 
 
