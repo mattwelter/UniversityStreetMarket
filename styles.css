@@ -524,7 +524,7 @@ nav li {
 		font-size: 28px;
 		line-height: 30px;
 		text-align: center;
-		margin-top: 125px;
+		margin-top: 175px;
 		font-weight: 800;
 	}
 
@@ -585,7 +585,7 @@ nav li {
 	#eventphotos {
 		grid-row-gap: 1vw !important;
 		grid-column-gap: 1.3vw !important;
-		margin-top: 8vw;
+		margin-top: 40px;
 	}
 
 	#eventphotos img {
