@@ -567,13 +567,19 @@ nav li {
 		background-color: #fbf7f5;
 	}
 
+	header {
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+
 	header section {
 		max-width: 1000px;
 	}
 
 	#marquee {
-		width: 55vw;
+		padding-top: 10px;
 		position: absolute;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	#eventphotos {
@@ -628,7 +634,6 @@ nav li {
 	#uofa {
 		margin-right: 150px;
 	}
-
 }
 
 
@@ -639,15 +644,18 @@ nav li {
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
+
 	#sentence {
 		margin-top: 165px;
 	}
+
 	#eventphotos {
-		margin-top: 80px;
+		margin-top: 40px;
 	}
-	#footer {
-		margin-top: 55px;
+
+	footer {
+		margin-top: 55px !important;
 	}
 }
 
