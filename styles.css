@@ -96,6 +96,7 @@ header {
 	width: 100%;
 	opacity: 0.94;
 	z-index: 2;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 header section {
@@ -207,8 +208,16 @@ footer p {
 	letter-spacing: 0.6px;
 }
 
-
-
+#wanttosell {
+	color: #333;
+	grid-row: 6;
+	grid-column: 1/7;
+	text-align: center;
+	font-weight: 800;
+	font-size: 45px;
+	line-height: 45px;
+	margin-top: 80px;
+}
 
 
 
@@ -321,13 +330,14 @@ footer p {
 
 #vendor-application {
 	text-decoration: none;
-	grid-row: 6;
+	grid-row: 7;
 	grid-column: 1/7;
 	color: white;
 	width: 220px;
 	display: block;
 	text-align: center;
 	margin: 0 auto;
+	margin-top: -35px;
 }
 
 #vendor-application p {
@@ -337,7 +347,6 @@ footer p {
 	font-size: 19px !important;
 	padding: 16px 10px 16px 10px;
 	transition: 0.2s ease;
-	margin-top: 60px;
 }
 
 #vendor-application p:hover {
@@ -355,7 +364,7 @@ footer p {
 
 #contact-us {
 	text-decoration: none;
-	grid-row: 7;
+	grid-row: 8;
 	grid-column: 1/7;
 	text-align: center;
 	margin: 0 auto;
@@ -564,11 +573,7 @@ nav li {
 	}
 
 	header .fab {
-		background-color: #fbf7f5;
-	}
-
-	header {
-		border-bottom: 1px solid rgba(0,0,0,0.1);
+		display: none;
 	}
 
 	header section {
@@ -576,10 +581,9 @@ nav li {
 	}
 
 	#marquee {
-		padding-top: 10px;
 		position: absolute;
-		width: 100%;
-		margin: 0 auto;
+		width: 60%;
+		margin: -42px 0px 0px 155px;
 	}
 
 	#eventphotos {
@@ -595,6 +599,30 @@ nav li {
 
 	#eventphotos .fab {
 		display: none;
+	}
+
+	#wanttosell {
+		font-size: 28px;
+		line-height: 30px;
+		margin-bottom: 30px;
+	}
+
+	#vendor-application {
+		width: 160px;
+		margin-top: -25px;
+	}
+
+	#vendor-application p {
+		font-size: 14px !important;
+		padding: 14px 12px 14px 12px;
+	}
+
+	#contact-us p {
+		font-size: 12px;
+	}
+
+	#contact-us .fas {
+		font-size: 14px;
 	}
 
 	#campuses img {
@@ -647,11 +675,11 @@ nav li {
 @media screen and (max-width: 376px) {
 
 	#sentence {
-		margin-top: 190px;
+		margin-top: 130px;
 	}
 
 	#eventphotos {
-		margin-top: 120px;
+		margin-top: 60px;
 	}
 
 	footer {
