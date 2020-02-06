@@ -89,7 +89,7 @@ p {
 header {
 	grid-column: 1/8;
 	grid-row: 1;
-	background-color: #fbf7f5;
+	background-color: rgba(0,0,0,0.3);
 	/*box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
 	border-bottom: 1px solid rgba(0,0,0,0.8);*/
 	position: fixed;
@@ -97,6 +97,7 @@ header {
 	opacity: 0.94;
 	z-index: 2;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
+	z-index: 10;
 }
 
 header section {
@@ -105,7 +106,7 @@ header section {
 }
 
 #marquee {
-	color: black;
+	color: white;
 	font-size: 14px !important;
 	width: 780px;
 	margin: -42px 0px 0px 165px;
@@ -171,7 +172,7 @@ footer p {
 }
 
 .fab {
-	color: black !important;
+	color: white !important;
 	float: right;
 	margin: -41px 20px 0px 0px;
 	font-size: 1.4em;
@@ -182,11 +183,10 @@ footer p {
 	margin: 0px 0px 0px 10px;
 	display: block;
 	padding-top: 3px;
-	filter: invert(100%);
 }
 
 #sentence {
-	color: #333;
+	color: black;
 	margin-top: 170px;
 	grid-row: 2;
 	grid-column: 1/7;
@@ -196,7 +196,7 @@ footer p {
 }
 
 #tag {
-	color: #555;
+	color: black;
 	font-size: 14px;
 	margin-top: -32px;
 	margin-bottom: 100px;
@@ -208,6 +208,129 @@ footer p {
 	letter-spacing: 0.6px;
 }
 
+#firstvideo {
+	position: absolute;
+	display: block;
+	z-index: -1;
+}
+
+#videotab {
+	display: block;
+	position: absolute;
+	width: 100%;
+	bottom: -250px;
+}
+
+#topsection {
+	grid-column: 1/7;
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 250px;
+	margin-bottom: 470px;
+}
+
+#topsection h1, #topsection h2 {
+	text-align: center;
+	font-weight: 600;
+	color: white;
+}
+
+#topsection h1 {
+	line-height: 50px;
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 72px;
+}
+
+#topsection h2 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: -45px;
+}
+
+.navbar-fixed-top.scrolled {
+	color: green !important;
+ 	background-color: blue !important;
+ 	transition: background-color 200ms linear;
+}
+
+#phonevideo {
+	grid-row: 5;
+	grid-column: 1/7;
+	width: 750px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+#phonecontainer {
+	float: right;
+	height: 533px;
+	border-radius: 12px;
+	transform: perspective(2000px) rotateY(-31deg) rotateX(3deg) translateY(0) translateX(0);
+	object-fit: contain;
+	background-color: rgba(0,0,0,0);
+	box-shadow: 4px 4px 50px 0 rgba(0,0,0,.2);
+}
+
+#phonecontainer video {
+	height: 533px;
+	border-radius: 12px;
+}
+
+#dates {
+	margin-top: 30px !important;
+	grid-row: 5;
+	grid-column: 1/7;
+	margin: 0 auto;
+	padding-right: 325px;
+	z-index: 2;
+}
+
+#dates h2 {
+	font-weight: 800;
+	color: #333;
+	font-size: 35px;
+}
+
+#dates h3 {
+	margin-top: -30px;
+	color: #555;
+	font-size: 17.5px;
+	padding-bottom: 10px;
+}
+
+table {
+    text-align: start;
+    word-wrap: break-word;
+    border-collapse: collapse;
+    width: 330px;
+}
+
+thead th {
+	text-align: start;
+	padding: 8px 0px !important;
+	font-size: 19px;
+}
+
+tbody {
+	color: #333;
+	font-size: 18px;
+}
+
+td {
+	padding: 12px 0px !important;
+}
+
+table td, table th {
+    padding: 0.25em 0.5em;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.tabletime {
+ font-size: 14px;
+ color: #777;
+}
+
 #wanttosell {
 	color: #333;
 	grid-row: 6;
@@ -216,10 +339,13 @@ footer p {
 	font-weight: 800;
 	font-size: 45px;
 	line-height: 45px;
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
-
+.emoji {
+	font-size: 24px;
+	vertical-align: middle;
+}
 
 
 
@@ -231,7 +357,7 @@ footer p {
 
 #eventphotos {
 	grid-column: 1/8;
-	grid-row: 4;
+	grid-row: 10;
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto;
@@ -262,13 +388,13 @@ footer p {
 	color: white !important;
 }
 
+#eventphotos section:hover {
+	opacity: 0.4;
+}
+
 #eventphotos section:nth-child(1) {
 	grid-column: 1;
 	grid-row: 1;
-}
-
-#eventphotos section:nth-child(1):hover {
-	opacity: 0.4;
 }
 
 #eventphotos section:nth-child(2) {
@@ -276,17 +402,9 @@ footer p {
 	grid-row: 1;
 }
 
-#eventphotos section:nth-child(2):hover {
-	opacity: 0.4;
-}
-
 #eventphotos section:nth-child(3) {
 	grid-column: 5;
 	grid-row: 1;
-}
-
-#eventphotos section:nth-child(3):hover {
-	opacity: 0.4;
 }
 
 #eventphotos section:nth-child(4) {
@@ -294,17 +412,14 @@ footer p {
 	grid-row: 2;
 }
 
-#eventphotos section:nth-child(4):hover {
-	opacity: 0.4;
-}
-
 #eventphotos section:nth-child(5) {
 	grid-column: 3;
 	grid-row: 2;
 }
 
-#eventphotos section:nth-child(5):hover {
-	opacity: 0.4;
+#eventphotos section:nth-child(5) img {
+	object-fit: cover;
+	max-height: 98%;
 }
 
 #eventphotos section:nth-child(6) {
@@ -312,9 +427,35 @@ footer p {
 	grid-row: 2;
 }
 
-#eventphotos section:nth-child(6):hover {
-	opacity: 0.4;
+#eventphotos section:nth-child(7) {
+	grid-column: 1;
+	grid-row: 3;
 }
+
+#eventphotos section:nth-child(8) {
+	grid-column: 3;
+	grid-row: 3;
+}
+#eventphotos section:nth-child(9) {
+	grid-column: 5;
+	grid-row: 3;
+}
+
+#eventphotos section:nth-child(10) {
+	grid-column: 1;
+	grid-row: 4;
+}
+
+#eventphotos section:nth-child(11) {
+	grid-column: 3;
+	grid-row: 4;
+}
+
+#eventphotos section:nth-child(12) {
+	grid-column: 5;
+	grid-row: 4;
+}
+
 
 
 
@@ -369,6 +510,7 @@ footer p {
 	text-align: center;
 	margin: 0 auto;
 	height: 14px;
+	margin-bottom: 100px;
 }
 
 #contact-us p {
@@ -511,9 +653,48 @@ nav li {
 
 
 
+@media screen and (max-width: 1300px) {
+
+	#firstvideo {
+		display: none;
+	}
+
+	#videotab {
+		display: none;
+	}
+
+	#topsection {
+		margin-top: -75px;
+		margin-bottom: 150px;
+	}
+
+	#topsection h1 {
+		color: #222;
+	}
+
+	#topsection h2 {
+		color: #777;
+	}
+
+	header {
+		background-color: #faf7f5;
+		opacity: 0.94;
+	}
+
+	#marquee {
+		color: black;
+	}
+
+	#logo {
+		filter: invert(100%);
+	}
+
+	.fab {
+		color: black !important;
+	}
 
 
-
+}
 
 
 
@@ -572,57 +753,56 @@ nav li {
 		font-size: 1.9em;
 	}
 
-	header .fab {
-		display: none;
-	}
-
 	header section {
 		max-width: 1000px;
 	}
 
 	#marquee {
+		display: none;
 		position: absolute;
 		width: 60%;
 		margin: -42px 0px 0px 155px;
 	}
 
+	#topsection {
+		width: 100%;
+	}
+
+	#topsection h1 {
+		font-size: 55px;
+		line-height: 55px;
+	}
+
+	#topsection h2 {
+		margin-top: -30px;
+	}
+
+	#dates {
+		padding-left: 24px;
+	}
+
+	#phonevideo {
+		width: 670px;
+		z-index: 5;
+	}
+
 	#eventphotos {
-		grid-row-gap: 1vw !important;
-		grid-column-gap: 1.3vw !important;
+		grid-row-gap: 1px;
+		grid-column-gap: 4px;
+		width: 100%;
 		margin-top: 40px;
+		margin-bottom: -50px;
+		margin: 0;
 	}
 
 	#eventphotos img {
-		height: 28vw;
-		width: 28vw;
+		height: 32.33333vw;
+		width: 32.33333vw;
+		border-radius: 0px;
 	}
 
 	#eventphotos .fab {
 		display: none;
-	}
-
-	#wanttosell {
-		font-size: 28px;
-		line-height: 30px;
-		margin-bottom: 30px;
-	}
-
-	#vendor-application {
-		width: 160px;
-		margin-top: -25px;
-	}
-
-	#vendor-application p {
-		font-size: 14px !important;
-		padding: 14px 12px 14px 12px;
-	}
-
-	#contact-us p {
-		font-size: 12px;
-	}
-
-	#contact-us .fas {
-		font-size: 14px;
 	}
 
 	#campuses img {
@@ -650,7 +830,105 @@ nav li {
 
 }
 
+@media screen and (max-width: 673px) {
+	#dates {
+		width: 1000px;
+	}
+}
 
+
+
+
+
+@media screen and (max-width: 500px) {
+
+	#topsection h1 {
+		font-size: 45px;
+		line-height: 45px;
+	}
+
+	#topsection h2 {
+		font-size: 18px;
+	}
+
+	#dates {
+		margin-top: 35px !important;
+		margin: 0 auto;
+		padding-right: 325px;
+	}
+
+	#dates h2 {
+		font-size: 24px;
+	}
+
+	#dates h3 {
+		margin-top: -20px;
+		color: #777;
+		font-size: 16px;
+		padding-bottom: 10px;
+	}
+
+	thead th {
+		font-size: 16px;
+		color: #333;
+	}
+
+	tbody {
+		font-size: 16px;
+	}
+
+	tbody td {
+		padding: 8px 0px !important;
+	}
+
+	.tabletime {
+		font-size: 13px;
+		color: #777;
+	}
+
+	#phonevideo {
+		width: 490px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	#phonecontainer {
+		height: 420px;
+	}
+
+	#phonecontainer video {
+		height: 100%;
+	}
+
+	#eventphotos {
+		margin-top: -40px;
+	}
+
+	#wanttosell {
+		font-size: 35px;
+		line-height: 35px;
+		margin-bottom: 30px;
+	}
+
+	#vendor-application {
+		width: 180px;
+		margin-top: -30px;
+	}
+
+	#vendor-application p {
+		font-size: 16px !important;
+		padding: 14px 12px;
+	}
+
+	#contact-us p {
+		font-size: 12px;
+	}
+
+	#contact-us .fas {
+		font-size: 14px;
+	}
+
+}
 
 
 @media screen and (min-width: 1392px) {
@@ -674,12 +952,59 @@ nav li {
 
 @media screen and (max-width: 376px) {
 
+	#topsection {
+		display: none;
+	}
+
+	#phonevideo {
+		display: none;
+	}
+
+	#phonecontainer {
+		height: 350px;
+	}
+
+	#dates {
+		margin-top: 80px !important;
+		margin: 0 auto;
+		padding-right: 325px;
+		padding-left: 16px;
+	}
+
+	#dates h2 {
+		font-size: 24px;
+	}
+
+	#dates h3 {
+		margin-top: -20px;
+		color: #777;
+		font-size: 16px;
+		padding-bottom: 10px;
+	}
+
+	thead th {
+		font-size: 16px;
+		color: #333;
+	}
+
+	tbody {
+		font-size: 16px;
+	}
+
+	tbody td {
+		padding: 8px 0px !important;
+	}
+
 	#sentence {
 		margin-top: 130px;
 	}
 
 	#eventphotos {
 		margin-top: 60px;
+	}
+
+	#contact-us {
+		margin-bottom: 0px;
 	}
 
 	footer {
