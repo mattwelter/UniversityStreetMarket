@@ -212,6 +212,7 @@ footer p {
 	position: absolute;
 	display: block;
 	z-index: -1;
+	width: 100%;
 }
 
 #videotab {
@@ -832,10 +833,9 @@ nav li {
 
 @media screen and (max-width: 673px) {
 	#dates {
-		width: 1000px;
+		width: 100%;
 	}
 }
-
 
 
 
@@ -946,11 +946,22 @@ nav li {
 
 
 
+/* 	
+
+		iPHONE X
+		@media screen and (max-width: 376px) {
+
+		}
+
+		JOTS iPHONE 
+		@media screen and (max-width: 415px) {
+
+		}
+
+*/
 
 
-
-
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
 
 	#topsection {
 		display: none;
@@ -969,6 +980,11 @@ nav li {
 		margin: 0 auto;
 		padding-right: 325px;
 		padding-left: 16px;
+		width:;
+	}
+
+	#dates h2, #dates h3 {
+		width: 300px;
 	}
 
 	#dates h2 {
