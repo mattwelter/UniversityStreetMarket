@@ -653,8 +653,10 @@ nav li {
 */
 
 
-
-@media screen and (max-width: 1300px) {
+/*
+						Was 1300px
+*/
+@media screen and (max-width: 9999px) {
 
 	#firstvideo {
 		display: none;
